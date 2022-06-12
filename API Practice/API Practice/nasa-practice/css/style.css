@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+html{
+  background: black;
+  font-size: 62.5%;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -17,6 +22,67 @@ img{
 
 .hidden{
   display: none;
+}
+
+.main, iframe{
+  height: 35rem;
+  width: 40rem;
+  text-align: center;
+}
+
+h1{
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  size: 3rem;
+
+}
+
+h3{
+  color: white;
+}
+
+.placeholder{
+  height: 35rem;
+  width: 40rem;
+}
+
+input{
+  text-align: center;
+}
+
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 

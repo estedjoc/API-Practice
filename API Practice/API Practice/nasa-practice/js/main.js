@@ -25,6 +25,7 @@ const getFetch = () => {
 
           picture.classList.toggle('hidden')
 
+
         }else if (data.media_type === 'video'){
           document.querySelector('iframe').src = data.url
 
@@ -53,3 +54,4 @@ document.querySelector('input').addEventListener('keydown', (evt) => {
 
 //anything that ciomes after the question mark afetr the .php is a key value pair for API
 
+//save media type in an empty array, if media types match don't toggle hidden, if they do, toggle. ^ next step
