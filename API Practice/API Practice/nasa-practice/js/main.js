@@ -1,23 +1,3 @@
-//Example fetch using pokemonapi.co
-
-// const getFetch = () => {
-//   const choice = document.querySelector('input').value.toLowerCase()
-//   const url = 'https://pokeapi.co/api/v2/pokemon/'+choice
-
-//   fetch(url)
-//       .then(res => res.json()) // parse response as JSON
-//       .then(data => {
-//         console.log(data)
-
-//         document.querySelector('h2').innerText = data.name
-
-//         document.querySelector('h3').innerText = data.types.length === 2 ? `${data.types[0].type.name} & ${data.types[1].type.name}` : `${data.types[0].type.name}`
-//       })
-//       .catch(err => {
-//           console.log(`error ${err}`)
-//       });
-// }
-
 const getFetch = () => {
   const choice = document.querySelector('input').value;
 
@@ -32,10 +12,14 @@ const getFetch = () => {
 
         const video = document.querySelector('iframe');
 
-        const picture = document.querySelector('img');
+        const picture = document.querySelector('.main');
+
+        document.querySelector('h3').innerText = data.explanation;
+
+        document.querySelector('.placeholder').classList.add('hidden');
 
         if (data.media_type === 'image'){
-          document.querySelector('img').src = data.hdurl
+          document.querySelector('.main').src = data.hdurl
 
           video.classList.add('hidden')
 
@@ -51,7 +35,9 @@ const getFetch = () => {
 
         // document.querySelector('img').src = data.hdurl
 
-        document.querySelector('h3').innerText = data.explanation
+        //need to make sure to have hidden class on by default, that's the purpose of the placeholder anwyays ezpz thank u leon god bless u 
+
+        
 
       })
       .catch(err => {
