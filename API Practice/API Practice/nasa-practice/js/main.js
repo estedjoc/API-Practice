@@ -110,6 +110,8 @@ const getFetch2 = () => {
 
           picture.classList.remove('hidden')
 
+          document.querySelector('iframe').src = '#'
+
         }else if (data.media_type === 'video'){
           document.querySelector('iframe').src = data.url
 
