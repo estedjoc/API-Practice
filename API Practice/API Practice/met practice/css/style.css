@@ -20,26 +20,13 @@ img{
   margin: 0 auto;
 }
 
-h2{
-  color: white;
-  width: 100%;
-  text-align: center;
-  size: 2rem;
-}
-
 .hidden{
   display: none;
 }
 
-.inputLocation{
-  text-align: center;
-  size: 3rem;
-  margin-top: 2rem;
-}
-
 .main, iframe{
-  height: 50rem;
-  width: 100rem;
+  height: 35rem;
+  width: 40rem;
   text-align: center;
 }
 
@@ -57,13 +44,12 @@ h3{
 }
 
 .placeholder{
-  height: 50rem;
-  width: 100rem;
+  height: 35rem;
+  width: 40rem;
 }
 
 input{
   text-align: center;
-  size: 3rem;
 }
 
 .fade-in-image {

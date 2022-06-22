@@ -25,10 +25,7 @@ const getFetch1 = () => {
 
         const picture = document.querySelector('.main');
 
-        document.querySelector('h3').innerText = data.explanation;
-
-        document.querySelector('h2').innerText = data.title
-
+        document.querySelector('h3').innerText = data.explanation + "  " + data.media_type;
 
         if (data.media_type === 'image'){
           document.querySelector('.main').src = data.hdurl
@@ -104,9 +101,7 @@ const getFetch2 = () => {
 
         const picture = document.querySelector('.main');
 
-        document.querySelector('h3').innerText = data.explanation;
-
-        document.querySelector('h2').innerText = data.title
+        document.querySelector('h3').innerText = data.explanation + "  " + data.media_type;
 
         previousValue2 = data.media_type;
 
