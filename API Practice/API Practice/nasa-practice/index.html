@@ -15,13 +15,27 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+
+		<!-- somejQuery calendar scripts and style -->
+
+		<!-- <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  -->
+
+		<!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+		<script>
+			$( function() {
+		  		$( "#datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+			} );
+		</script> 
+	
+		For if I ever want to come back and play with some jQuery a bit-->
 	</head>
 	<body>
 
 		<h1>Media of the Day</h1>
 
 		<section class="inputLocation">
-			<input type="date" name="" value="">
+			<input type="date" data-date-format='yy-mm-dd' id="datepicker">
 			<button type="button" name="button">Get Media</button>
 		</section>
 		

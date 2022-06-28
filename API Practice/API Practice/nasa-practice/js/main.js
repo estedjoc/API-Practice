@@ -8,7 +8,7 @@ const click = () => {
 
 const getFetch1 = () => {
   
-  const choice = document.querySelector('input').value;
+  const choice = document.querySelector('input').value.toString();
 
   console.log(choice);
 
@@ -91,7 +91,7 @@ const getFetch1 = () => {
 
 const getFetch2 = () => {
   
-  const choice = document.querySelector('input').value;
+  const choice = document.querySelector('input').value.toString();
 
   console.log(choice);
 
