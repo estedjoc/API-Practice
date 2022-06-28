@@ -33,6 +33,8 @@ const getFetch1 = () => {
         if (data.media_type === 'image'){
           document.querySelector('.main').src = data.hdurl
 
+          document.querySelector('.main').alt = data.explanation;
+
           video.classList.add('hidden')
 
           picture.classList.toggle('hidden')
@@ -112,6 +114,8 @@ const getFetch2 = () => {
 
         if (data.media_type === 'image'){
           document.querySelector('.main').src = data.hdurl
+
+          document.querySelector('.main').alt = data.explanation;
 
           video.classList.add('hidden')
 
