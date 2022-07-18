@@ -16,6 +16,10 @@ const getFetch1 = () => {
 
   const url = `https://collectionapi.metmuseum.org/public/collection/v1/objects`;
 
+  document.querySelector('.placeholder').classList.add('hidden');
+
+  document.querySelector('.main').classList.remove('hidden');
+
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
@@ -32,6 +36,8 @@ const getFetch1 = () => {
           .then(res => res.json()) // parse response as JSON
           .then(data => {
             console.log(data)
+
+            document.querySelector('.main').src = data.primaryImage
           })
           .catch(err => {
             console.log(`error ${err}`)
