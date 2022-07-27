@@ -16,7 +16,9 @@ const getFetch1 = () => {
 
   const choice = document.querySelector('input').value.toString();
 
-  const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${choice}`;
+  const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&isOnView=true&q=${choice}`;
+
+  //learned how to use the API parameters again on Jul 27 2022 and it helped me reach a goal on this api app I waas building out
 
   document.querySelector('.placeholder').classList.add('hidden');
 
@@ -28,9 +30,7 @@ const getFetch1 = () => {
       .then(data => {
         console.log(data)
 
-        console.log(data.objectIDs[Math.floor(Math.random() * data.total)])
-
-        let artID = data.objectIDs[Math.floor(Math.random() * data.total)]
+        let artID = data.objectIDs[Math.floor(Math.random() * data.total + 1)]
 
         const url2 = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${artID}`
 
@@ -38,6 +38,8 @@ const getFetch1 = () => {
           .then(res => res.json()) // parse response as JSON
           .then(data => {
 
+            console.log(url2)
+            console.log(artID)
             console.log(data)
 
             document.querySelector('.main').src = data.primaryImage
