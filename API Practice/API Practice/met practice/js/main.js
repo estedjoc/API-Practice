@@ -14,7 +14,9 @@ const getFetch1 = () => {
 
   // console.log(randomARTID);
 
-  const url = `https://collectionapi.metmuseum.org/public/collection/v1/objects`;
+  const choice = document.querySelector('input').value.toString();
+
+  const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${choice}`;
 
   document.querySelector('.placeholder').classList.add('hidden');
 
@@ -26,15 +28,16 @@ const getFetch1 = () => {
       .then(data => {
         console.log(data)
 
-        console.log(data.objectIDs[Math.floor(Math.random() * 480030)])
+        console.log(data.objectIDs[Math.floor(Math.random() * data.total)])
 
-        let artID = data.objectIDs[Math.floor(Math.random() * 480030)]
+        let artID = data.objectIDs[Math.floor(Math.random() * data.total)]
 
         const url2 = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${artID}`
 
         fetch(url2)
           .then(res => res.json()) // parse response as JSON
           .then(data => {
+
             console.log(data)
 
             document.querySelector('.main').src = data.primaryImage
