@@ -42,6 +42,8 @@ const getFetch1 = () => {
             console.log(artID)
             console.log(data)
 
+            document.querySelector('iframe').src = data.objectURL
+
             document.querySelector('.main').src = data.primaryImage
           })
           .catch(err => {
