@@ -22,7 +22,7 @@ const getFetch1 = () => {
 
   document.querySelector('.placeholder').classList.add('hidden');
 
-  document.querySelector('.main').classList.remove('hidden');
+  // document.querySelector('.main').classList.remove('hidden');
 
 
   fetch(url)

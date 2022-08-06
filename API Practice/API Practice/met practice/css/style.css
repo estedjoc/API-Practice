@@ -20,14 +20,24 @@ img, iframe{
   margin: 0 auto;
 }
 
+article{
+  height: 50rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hidden{
   display: none;
 }
 
 .main, iframe{
-  height: 35rem;
-  width: 40rem;
+  height: 90%;
+  width: 90%;
   text-align: center;
+  margin: 0 auto;
+  overflow: auto;
 }
 
 h1{
@@ -50,6 +60,26 @@ h3{
 
 input{
   text-align: center;
+}
+
+.buttonSection{
+  width: 100%;  
+  border: 1px solid #999999;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+#inputText, button{
+  /* width: 15%;
+  margin: 0 auto; 
+  height: 5rem; 
+  border: 1px solid #999999; 
+  padding: 5px;
+  text-align: center;
+  font-size: 10rem; */
+
+  font-size: 2rem;
 }
 
 .fade-in-image {
