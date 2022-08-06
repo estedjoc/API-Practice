@@ -20,9 +20,9 @@ const getFetch1 = () => {
 
   //learned how to use the API parameters again on Jul 27 2022 and it helped me reach a goal on this api app I waas building out
 
-  document.querySelector('.placeholder').classList.add('hidden');
+  document.querySelector('.imageSection').classList.add('hidden');
 
-  // document.querySelector('.main').classList.remove('hidden');
+  document.querySelector('.main').classList.remove('hidden');
 
 
   fetch(url)
