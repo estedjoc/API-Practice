@@ -8,7 +8,7 @@
 }
 
 html{
-  background: black;
+  background: rgba(221, 199, 160, 1);
   font-size: 62.5%;
 }
 
@@ -55,7 +55,7 @@ iframe{
 
 h1{
   width: 100%;
-  color: white;
+  color: rgba(128, 56,36, 1);
   text-align: center;
   font-family: 'Kdam Thmor Pro', sans-serif;
   size: 3rem;
@@ -78,7 +78,6 @@ input{
 .buttonSection{
   width: 100%;
   height: 30rem;
-  border: 1px solid #999999;
   margin: 4%;
   display: flex;
   justify-content: center;
@@ -101,6 +100,7 @@ header{
   font-size: 3rem;
   height: 7.5rem;
   width: 40%;
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 article{
