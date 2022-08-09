@@ -12,29 +12,31 @@
 /*******************************************/
 
 html{
-  background: rgba(221, 199, 160, 1);
+  background: rgba(232,	206,	165, 1);
   font-size: 62.5%;
+  height: 100%;
+  margin: 0;
 }
 
 main{
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 article, .imageSection{
-  height: 100rem;
+  height: 80rem;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
 .imageSection > img{
   height: 100%;
-  width: 100%;
+  width: 90%;
 }
 
 .hidden{
@@ -50,7 +52,7 @@ iframe{
 
 h1{
   width: 100%;
-  color: rgba(128, 56,36, 1);
+  color: rgba(76, 37, 9, 1);
   text-align: center;
   font-family: 'Cinzel', serif;
   size: 3rem;
@@ -74,27 +76,26 @@ input{
   width: 100%;
   height: 12rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  margin-bottom: 3%;
 }
 
 header{
   font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2%;
 }
 
-#inputText, button{
-  /* width: 15%;
-  margin: 0 auto; 
-  height: 5rem; 
-  border: 1px solid #999999; 
-  padding: 5px;
-  text-align: center;
-  font-size: 10rem; */
-
+#inputText{
   font-size: 3rem;
   height: 7.5rem;
   width: 40%;
-  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Marcellus', serif;
+  color: rgba(76, 37, 9 ,1);
+  margin-bottom: 3%;
 }
 
 article{
@@ -105,10 +106,9 @@ article{
   align-items: center;
 }
 
-
-
-
-
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
 
 .fade-in-image {
   animation: fadeIn 5s;
@@ -117,10 +117,6 @@ article{
   -o-animation: fadeIn 5s;
   -ms-animation: fadeIn 5s;
 }
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
 
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -145,4 +141,39 @@ article{
 @-ms-keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+button {
+  background: linear-gradient(to bottom right, rgba(76, 37, 9, 1), rgba(132, 68, 30, 1));
+  border: 0;
+  border-radius: 12px;
+  color: rgba(232, 206, 179, 1);
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Marcellus', serif;;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  height: 7.5rem;
+  width: 25%;
+}
+
+/* button{
+  background: linear-gradient(to bottom right, rgba(126, 156, 199, 1), rgba(179, 197, 205, 1));
+} */
+
+button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(76, 37, 9, 0.5), .125rem .125rem 1rem rgba(132, 68, 30, 0.5);
+}
+
+button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(76, 37, 9, 0.5), .125rem .125rem 1rem rgba(132, 68, 30, 0.5);
 }

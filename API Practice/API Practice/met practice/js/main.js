@@ -22,7 +22,7 @@ const getFetch1 = () => {
 
   document.querySelector('.imageSection').classList.add('hidden');
 
-  document.querySelector('.main').classList.remove('hidden');
+  document.querySelector('.info').classList.remove('hidden');
 
 
   fetch(url)
@@ -44,7 +44,7 @@ const getFetch1 = () => {
 
             document.querySelector('iframe').src = data.objectURL
 
-            document.querySelector('.main').src = data.primaryImage
+            document.querySelector('.info').src = data.primaryImage
           })
           .catch(err => {
             console.log(`error ${err}`)
