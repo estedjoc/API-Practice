@@ -8,7 +8,7 @@
 }
 
 html{ 
-  background: url('../img/FinishedGreenBarracuda-size_restricted.gif') no-repeat center center fixed; 
+  background: url('../img/giphy.gif') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -71,6 +71,19 @@ input{
   size: 3rem;
 }
 
+
+#datepicker{
+  height: 2rem;
+  width: 30%;
+  font-size: 2rem;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
 .fade-in-image {
   animation: fadeIn 5s;
   -webkit-animation: fadeIn 5s;
@@ -103,10 +116,3 @@ input{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-
-
-
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
